@@ -13,6 +13,7 @@ public class Car {
 		String username = "root";
 		String password = "root";
 		String query = "Insert into car values(?,?,?,?,?)";
+		
 
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -56,6 +57,7 @@ public class Car {
 			conn.close();
 			ps.close();
 
+			
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
