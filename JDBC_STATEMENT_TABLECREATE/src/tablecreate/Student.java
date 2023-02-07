@@ -12,8 +12,8 @@ public class Student {
 		String url = "jdbc:mysql://localhost:3306/student";
 		String username = "root";
 		String password = "root";
-		String table = "Create table student " + "(id INTEGER not NULL, " + "name VARCHAR(45), "
-						+ "address VARCHAR(45), " + " PRIMARY KEY (id))";
+		//Table Creation
+		String table = "Create table student (id INTEGER not NULL,name VARCHAR(45), address VARCHAR(45), PRIMARY KEY (id))";
 
 		String query = "Insert into student values (1, 'Dinga', 'Bangalore')";
 
